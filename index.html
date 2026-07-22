@@ -292,28 +292,10 @@
     border: 2px solid var(--border-soft);
     padding: 20px;
   }
-  .founder-logo img { max-width: 100%; max-height: 100%; }
+  .founder-logo i { font-size: 60px; color: #cbd5e1; }
   .founder-content h3 { font-size: 28px; font-weight: 900; margin: 0 0 5px 0; color: var(--hc-black); }
   .founder-content .subtitle { font-size: 14px; font-weight: 800; color: var(--hc-orange); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 20px; display: block; }
   .founder-content p { font-size: 16px; line-height: 1.8; color: var(--text-muted); margin: 0 0 25px 0; font-weight: 400; }
-  .founder-links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--hc-deep-blue);
-    font-weight: 800;
-    text-decoration: none;
-    font-size: 14px;
-    margin-right: 25px;
-    transition: all 0.2s;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 10px 20px;
-    border: 2px solid var(--border-soft);
-    border-radius: 8px;
-    background: var(--bg-white);
-  }
-  .founder-links a:hover { color: var(--hc-orange); border-color: var(--hc-orange); }
 
   /* AUTHORITY STRIP */
   .authority-section {
@@ -389,7 +371,7 @@
     border-radius: 16px;
     padding: 40px;
     max-width: 850px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto;
     box-shadow: var(--shadow-sm);
   }
 
@@ -458,58 +440,30 @@
   }
   .subtext-label i { margin-right: 6px; color: var(--hc-orange); font-size: 12px; }
 
-  /* CONTACT ACTIONS */
-  .action-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 40px;
-  }
-  .btn-primary {
-    background: var(--hc-orange);
-    color: var(--bg-white);
-    padding: 18px 40px;
-    border-radius: 12px;
-    font-weight: 900;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    border: 2px solid var(--hc-orange);
-    transition: all 0.2s;
-  }
-  .btn-primary:hover {
-    background: #e03e00;
-    border-color: #e03e00;
-    transform: translateY(-3px);
-    box-shadow: 0 15px 25px rgba(255, 69, 0, 0.2);
-  }
-  .btn-secondary {
-    background: transparent;
-    color: var(--hc-deep-blue);
-    border: 2px solid var(--hc-deep-blue);
-    padding: 18px 40px;
-    border-radius: 12px;
-    font-weight: 900;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    transition: all 0.2s;
-  }
-  .btn-secondary:hover {
+  /* CALL TO ACTION BOX */
+  .cta-box {
     background: var(--hc-deep-blue);
     color: var(--bg-white);
-    transform: translateY(-3px);
-    box-shadow: 0 15px 25px rgba(20, 100, 132, 0.2);
+    border-radius: 16px;
+    padding: 35px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 10px 25px rgba(20, 100, 132, 0.2);
   }
+  .cta-box h3 {
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0 0 15px 0;
+    color: var(--bg-white);
+  }
+  .cta-box p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #e2e8f0;
+    margin: 0;
+  }
+  .cta-box strong { color: var(--hc-orange); }
+
 </style>
 </head>
 <body>
@@ -548,7 +502,7 @@
   <section class="reality-box">
     <h2 class="bypass-build">Bypass the Bureaucracy.<br><span>Build the Platform.</span></h2>
     <p class="reality-text">
-      <strong>The Reality:</strong> You are likely optimizing a 1% margin at a massive fintech giant, or building theoretical slide decks at a Tier-1 consultancy while others execute. This is an invitation to step into the arena. <span class="reality-highlight">Our client, Concourse, is an early-stage GovTech startup backed by Bessemer Venture Partners. They are actively deploying the AI-native software that replaces 30-year-old municipal mainframes across the country.</span> We are looking for their Founding Chief of Staff to join as a critical early team member (Employee #10). Come build the operational engine alongside a previously exited CEO, don't just advise on it.
+      <strong>The Reality:</strong> You are likely optimizing a 1% margin at a massive fintech giant, or building theoretical slide decks at a Tier-1 consultancy while others execute. This is an invitation to step into the arena. <span class="reality-highlight">Our client is an early-stage GovTech startup backed by Bessemer Venture Partners. They are actively deploying the AI-native software that replaces 30-year-old municipal mainframes across the country.</span> We are looking for their Founding Chief of Staff to join as a critical early team member (Employee #10). Come build the operational engine alongside a previously exited CEO, don't just advise on it.
     </p>
   </section>
 
@@ -606,16 +560,12 @@
     <h2 class="founder-header">The Leadership & Vision</h2>
     <div class="founder-card">
       <div class="founder-logo">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS51yKZJgwT9GOa8puvu9mG5SNas7SdcpLE96DDY2xQLQ&s=10" alt="Concourse">
+        <i class="fas fa-cube text-6xl text-slate-300"></i>
       </div>
       <div class="founder-content">
-        <h3>Thomas Smyth</h3>
-        <span class="subtitle">CEO & Serial Founder | Concourse</span>
-        <p>Reporting directly to Thomas means proximity to a proven, de-risked serial founder. Thomas previously ran Trim for 6 years, raised $13M, and successfully guided the company to a lucrative exit (acquired by OneMain Financial/NYSE:OMF in 2021). You are trading corporate safety for direct mentorship and the raw, uncapped upside of building an AI-native company alongside an executive who has already won the game once.</p>
-        <div class="founder-links">
-          <a href="https://www.linkedin.com/in/thomasjcsmyth/" target="_blank"><i class="fab fa-linkedin" style="color: #0A66C2;"></i> LinkedIn Profile</a>
-          <a href="https://www.concoursetech.com/" target="_blank"><i class="fas fa-globe" style="color: var(--text-muted);"></i> concoursetech.com</a>
-        </div>
+        <h3>Early-Stage GovTech Innovator</h3>
+        <span class="subtitle">Backed by Bessemer Venture Partners</span>
+        <p>Reporting directly to the CEO means proximity to a proven, highly successful serial founder. The CEO previously ran a startup for 6 years, raised $13M, and successfully guided the company to a lucrative exit (acquired by a major NYSE-listed financial institution in 2021). You are trading corporate safety for direct mentorship and the raw, uncapped upside of building an AI-native company alongside an executive who has already won the game once.</p>
       </div>
     </div>
   </section>
@@ -624,7 +574,7 @@
   <section class="authority-section">
     <h2>Your True Partner: HIRECLOUT</h2>
     <p class="authority-desc">
-      At HIRECLOUT, humanity is our differentiator. We are a premier Tech and Go-To-Market talent partner focused on raising the bar. We bypass the synthetic noise of modern recruiting to dominate the details that actually dictate success: genuine psychological alignment, deep cultural fit, and your long-term trajectory. We are direct, expert, and pragmatic—dedicated to supporting you as you create value from day one. Because we index strictly on preparation and truth, the professionals we place stay <strong>2.3x longer</strong> than the industry average. We are partnering directly with the CEO of Concourse to secure this crucial hire. <strong style="color: var(--hc-orange);">Let's Go!</strong>
+      At HIRECLOUT, humanity is our differentiator. We are a premier Tech and Go-To-Market talent partner focused on raising the bar. We bypass the synthetic noise of modern recruiting to dominate the details that actually dictate success: genuine psychological alignment, deep cultural fit, and your long-term trajectory. We are direct, expert, and pragmatic—dedicated to supporting you as you create value from day one. Because we index strictly on preparation and truth, the professionals we place stay <strong>2.3x longer</strong> than the industry average. We are partnering directly with the leadership team to secure this crucial hire. <strong style="color: var(--hc-orange);">Let's Go!</strong>
     </p>
     <div class="client-logo-grid">
       <div class="client-logo-item">
@@ -667,22 +617,22 @@
 
     <div class="step-container">
       <div class="step-title">
-        <div class="step-icon"><i class="fas fa-envelope"></i></div>
-        Step 1: Share Your Perspective
+        <div class="step-icon"><i class="fas fa-list-check"></i></div>
+        Preparation Questions
       </div>
       <p style="color: var(--text-muted); margin: 0 0 35px 0; line-height: 1.8; font-size: 16px;">
-        Please send a direct message to Ric with your honest, mindful answers to the prompts below. <strong>Do not worry about corporate speak.</strong> We will act as your sounding board, helping you refine your storytelling and supporting you completely as we move forward together.
+        Please review the following prompts. <strong>Do not worry about corporate speak.</strong> We will act as your sounding board, helping you refine your storytelling and supporting you completely as we move forward together.
       </p>
 
       <div class="questions-grid">
         <!-- Q1 -->
         <div class="q-box">
           <span class="q-num">01</span>
-          <h3 class="q-title">Your Work</h3>
-          <p class="q-text">Please attach your updated CV as a PDF. Include direct links to your repositories (GitHub or otherwise) if applicable.</p>
+          <h3 class="q-title">Your Trajectory</h3>
+          <p class="q-text">What is the most impactful operational system or team you have built from scratch?</p>
           <div class="subtext-tip">
             <span class="subtext-label"><i class="fas fa-crosshairs"></i> The Subtext</span>
-            Let your shipped projects and trajectory do the talking. We are evaluating raw intellectual horsepower and a builder's mindset.
+            Let your shipped projects do the talking. We are evaluating raw intellectual horsepower and a zero-to-one builder's mindset.
           </div>
         </div>
         <!-- Q2 -->
@@ -702,7 +652,7 @@
           <p class="q-text">What have you actively built or automated using AI-native workflows (like Claude Code CLI)?</p>
           <div class="subtext-tip">
             <span class="subtext-label"><i class="fas fa-crosshairs"></i> The Subtext</span>
-            Don't just list tools—tell us *how* you use them to scale your own output. Concourse needs leaders who view AI as a daily execution multiplier.
+            Don't just list tools—tell us *how* you use them to scale your own output. This role requires leaders who view AI as a daily execution multiplier.
           </div>
         </div>
         <!-- Q4 -->
@@ -737,22 +687,17 @@
         </div>
       </div>
 
-      <div class="step-title" style="margin-bottom: 15px; margin-top: 40px;">
-        <div class="step-icon"><i class="fas fa-paper-plane"></i></div>
-        Step 2: Let's Connect
+      <!-- NEW CTA BLOCK -->
+      <div class="cta-box">
+        <h3>Let's Connect</h3>
+        <p>
+          We’d love to schedule a brief 15-20 minute introductory call to get to know you—not just for this specific opportunity, but to understand your long-term trajectory for future roles in our network.
+          <br><br>
+          To move forward, simply <strong>reply directly to the message or email where you received this link</strong> with your updated CV (PDF) and a quick note addressing the alignment questions above.
+          <br><br>Have questions before committing? Just ask us directly in the thread.
+        </p>
       </div>
-      <p style="color: var(--text-muted); margin: 0; line-height: 1.7; font-size: 16px;">
-        Send your answers directly via email or LinkedIn. We will review your materials and schedule a brief, 15-minute alignment call. This isn't a traditional interview—it's a collaborative session to map your story, clear any gaps, and ensure you are positioned for absolute success.
-      </p>
-    </div>
 
-    <div class="action-buttons">
-      <a href="mailto:ric@hireclout.com?subject=Concourse%20-%20Founding%20Chief%20of%20Staff%20Alignment" class="btn-primary">
-        <i class="fas fa-envelope"></i> Email Ric Directly
-      </a>
-      <a href="https://www.linkedin.com/in/ricsanchez-talentsystems/" target="_blank" class="btn-secondary">
-        <i class="fab fa-linkedin"></i> Message on LinkedIn
-      </a>
     </div>
   </section>
 
